@@ -1,4 +1,22 @@
 print("Hello World!")
 # the terminal will return Hello World!
 
+#Step 1 
+# the variable's datatype on line 4 is a String(Word)
+name = "LeBron"
+# the variable's datatype on line 6 is a integer
+age = 35
+# the variable's datatype on line 8 is a decimal(double)
+salary = 37.44
+# the variable's datatype on line 10 is a boolean(true or false)
+plays_basketball = True
+# the variable's datatype on line 12 is a String
+jersey_number = "23"
 
+#Step 2 
+car_name = "Toyota"
+x = 50
+first_name = "Andy"
+print(car_name)
+type(x)
+print(first_name)
