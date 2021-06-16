@@ -18,5 +18,6 @@ car_name = "Toyota"
 x = 50
 first_name = "Andy"
 print(car_name)
+print(x)
 type(x)
 print(first_name)
