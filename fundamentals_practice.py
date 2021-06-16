@@ -14,10 +14,10 @@ plays_basketball = True
 jersey_number = "23"
 
 #Step 2 
-car_name = "Toyota"
+Car_name = "Toyota"
 x = 50
 first_name = "Andy"
-print(car_name)
+print(Car_name)
 print(x)
 type(x)
 print(first_name)
