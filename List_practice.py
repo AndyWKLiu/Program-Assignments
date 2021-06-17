@@ -1,3 +1,6 @@
+#Slide 14 
+empty_list = []
+
 #Slide 15
 City_list = ["Oakland", "Atlanta", "New_York_City", "Seattle", "Memphis", "Miami", "Boston", "Los_Angeles", "Denver", "New_Orleans"]
 print(City_list)
