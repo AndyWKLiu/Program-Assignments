@@ -106,7 +106,7 @@ def Mix_Numbers(Name1, Name2):
     Updated_shoe1 = People_PhoneNumber[Name2]
     Updated_shoe2 = People_PhoneNumber[Name1]
     People_PhoneNumber["Jeff"] = Updated_shoe1
-    People_PhoneNumber["Bill"] = Updated_shoe2
-    return(People_PhoneNumber)
+    People_PhoneNumber["Jones"] = Updated_shoe2
+    print(People_PhoneNumber)
 
-Mix_Numbers("Jeff", "Bill")
+Mix_Numbers("Jeff", "Jones")
