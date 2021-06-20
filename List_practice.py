@@ -50,5 +50,44 @@ print(City_list)
 City_list.pop(4)
 City_list.remove("Miami")
 print(City_list)
-element = City_list.clear()
-print(element)
+#The remaining of Lab 4 will not work if line 53 and 54 are not comments because it erases the values of City_list
+#element = City_list.clear()
+#print(element)
+
+#Lab 4
+
+#Step IX
+
+def Every_city():
+    Longest_city_name = "a"
+    i = 0 
+    while i < len(City_list):
+        print(City_list[i])
+        x = City_list[i]
+        if len(City_list[i]) > len(Longest_city_name):
+            Longest_city_name = x 
+        i += 1
+    return((Longest_city_name))
+Every_city()
+
+#Step X 
+def Organizing_cities():
+    for i in range(0, 16):
+        b = City_list[i]
+        a = City_list[i + 1]
+        if len(b) >= len(a):
+            i += 1
+        else:
+            City_list.remove(b)
+            City_list.append(b)
+    return City_list
+Organizing_cities()
+
+#Step XI
+def People_with_three_letter_name():
+    i = 0
+    while i < len(Name_list):
+        if len(Name_list[i]) == 3:
+            print(Name_list[i])
+        i = i + 1
+People_with_three_letter_name()
