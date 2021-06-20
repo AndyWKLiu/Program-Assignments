@@ -67,3 +67,46 @@ print(People_PhoneNumber)
 del Shoe_amount["Nikes"]
 del Shoe_amount["Yeezy"]
 print(Shoe_amount)
+
+#Lab 4 
+
+#Step II
+#Some inputs will not work from Food_price because there are some items deleted in Lab 3 such as "Beef"
+def total_price(item1, item2):
+    sum = Food_price[item1] + Food_price[item2]
+    print("The total price of",item1, "and", item2, "is",  sum)
+    return sum 
+total_price("Chicken", "Cheese")
+
+#Step III
+#Some inputs will not work from Food_price because there are some items deleted in Lab 3 such as "Beef"
+def price_difference(item1, item2):
+    difference = Food_price[item1] - Food_price[item2]
+    print("The difference between", item1, "and", item2, "is", abs(round(difference, 2)))
+    return difference
+price_difference("Cheese", "Chicken")
+
+#Step IV
+#Some inputs will not work from Shoe_amount because there are some items deleted in Lab 3 such as "Yeezy"
+def Restock(shoe, amount):
+    Updated_shoe = Shoe_amount[shoe] * amount 
+    Shoe_amount["Jordan_13"] = Updated_shoe
+    return(Shoe_amount)
+Restock("Jordan_13", 3)
+
+#Step V
+def Clearance_sale(shoe, amount):
+    Updated_shoe = Shoe_amount[shoe] / amount 
+    Shoe_amount["Air_Max"] = Updated_shoe 
+    return(Shoe_amount)
+Clearance_sale("Air_Max", 3)
+
+#Step VI
+def Mix_Numbers(Name1, Name2):
+    Updated_shoe1 = People_PhoneNumber[Name2]
+    Updated_shoe2 = People_PhoneNumber[Name1]
+    People_PhoneNumber["Jeff"] = Updated_shoe1
+    People_PhoneNumber["Bill"] = Updated_shoe2
+    return(People_PhoneNumber)
+
+Mix_Numbers("Jeff", "Bill")
