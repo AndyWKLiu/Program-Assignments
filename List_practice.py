@@ -71,6 +71,7 @@ def Every_city():
 Every_city()
 
 #Step X 
+
 def Organizing_cities():
     for i in range(0, 16):
         b = City_list[i]
