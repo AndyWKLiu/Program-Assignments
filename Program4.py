@@ -30,10 +30,8 @@ def triangleArea(base, height):
 
 n = 5
 m = 5
-areaList = [0] * n * m
-i = 0
+areaList = []
 for b in range(0, n):
     for h in range(0, m):
-        areaList[i] = triangleArea(b, h)
-        i += 1
+        areaList.append(triangleArea(b, h))
 print(areaList)
