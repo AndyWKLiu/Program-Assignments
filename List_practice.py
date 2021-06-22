@@ -92,3 +92,17 @@ def People_with_three_letter_name():
             print(Name_list[i])
         i = i + 1
 People_with_three_letter_name()
+
+#Bonus
+a = [9, 13, 1, 8, 12, 4, 0, 5]
+b = [3, 17, 4, 14, 6]
+def sum_of_numbers_closest_to_target(t):
+    c = 0
+    while c < len(b):
+        for i in range(0, 8):
+                sum = a[i] + b[c] 
+                difference = sum - t
+                if(abs(difference) == 1):
+                    print("[", a[i], b[c], "]")
+        c += 1
+sum_of_numbers_closest_to_target(20)
