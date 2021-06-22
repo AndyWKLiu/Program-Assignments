@@ -96,7 +96,7 @@ People_with_three_letter_name()
 #Bonus
 a = [9, 13, 1, 8, 12, 4, 0, 5]
 b = [3, 17, 4, 14, 6]
-def sum_of_numbers_closest_to_target(t) :
+def sum_of_numbers_closest_to_target(t):
     c = 0
     while c < len(b) :
         for i in range(0, 8):
